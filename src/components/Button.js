@@ -1,13 +1,13 @@
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 export default function Button({ textoBoton, accionBoton, color }) {
-    
+    // Objeto con los colores disponibles
     const Colores = {
-        Negro: '#000',
+        Negro: '#000', // Color negro por defecto
     };
 
-   
-    const buttonColor = Colores[color] || color;
+    // Determinar el color del botón
+    const buttonColor = Colores[color] || color; // Si el color proporcionado no está en Colores, se usa el color directamente
 
     return (
         <TouchableOpacity style={[styles.button, { backgroundColor: buttonColor, borderColor: buttonColor }]} onPress={accionBoton}>
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         textAlign: 'center',
-        color: "#FFF",
+        color: "#FFF", // Color blanco para el texto del botón
         fontWeight: '800',
         fontSize: 15,
     }

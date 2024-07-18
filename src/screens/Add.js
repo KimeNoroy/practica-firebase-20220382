@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput, Image, Alert } from 'react-native';
-import { database, storage } from '../config/firebase';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import { collection, addDoc } from 'firebase/firestore';
-import * as ImagePicker from 'expo-image-picker';
+import { database, storage } from '../config/firebase'; // Importación de configuración de Firebase
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'; // Importación de funciones de Firebase Storage
+import { collection, addDoc } from 'firebase/firestore'; // Importación de funciones de Firebase Firestore
+import * as ImagePicker from 'expo-image-picker'; // Importación del módulo de selección de imágenes de Expo
 
 // Componente Add para agregar un nuevo producto
 const Add = ({ navigation }) => {
